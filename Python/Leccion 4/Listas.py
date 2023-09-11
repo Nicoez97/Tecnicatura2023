@@ -1,0 +1,191 @@
+"""Lista=Ariel,Liliana,Natalia,Osvaldo"""
+#Colecciones en Python
+
+#Las listas es lo que se conoce en otros lenguajes como arreglos o vectores
+nombres=['Naty','Osvaldo','Lyli','Ariel']
+print(nombres)
+print(nombres[0])
+print(nombres[1])
+print(nombres[3])
+print(nombres[-1])
+print(nombres[-2])
+
+#Recuperar rangos de la lista
+print(nombres)
+print(nombres[0:2])#Solo muestra el indice 0,1 pero no el indice 2
+#ir al inicio de la lista al indice(Sin incluirlo)
+print(nombres[ :3])#Indices a mostrar 0,1,2
+#Desde el indice indicado hasta el final@
+print(nombres[1: ])
+#Modificar un valor dentro de nuestra lista 
+nombres[2]='Liliana'
+nombres[0]='Natalia'
+print(nombres)
+#Iterar una lista
+for nombre in nombres: #nombre es singular, la lista es plural
+    print(nombre)
+else:
+    print('Se acabaron los elementos de la lista ')
+#Preguntamos cuantos elementos tiene
+print(len(nombres)) # le pasamos como parametro la lista
+
+#Agregamos un elemento
+nombres.append('Marcelo')
+nombres.append([1,2,3])
+nombres.append(True)
+nombres.append(10.45)
+nombres.append([4,5])
+nombres.append(7)
+print(nombres)
+#Insertar un elemento en un indice especifico
+nombres.insert(1,'Alberto')
+print(nombres)
+nombres.insert(3, 'Debora')
+print (nombres)
+
+#Eliminamos un elemento
+nombres.remove('Alberto')
+print(nombres)
+#Eliminar el ultimo elemento
+nombres.pop()
+print(nombre)
+
+#Eliminar un indice especifico
+del nombres [2] #Del significa delete (eliminar)
+print(nombres)
+
+#Eliminar, borrar o limpiar todos los elementos 
+nombres.clear()
+print(nombres)
+
+#Eliminar la lista
+del nombres
+#print(nombres)
+
+#Definimos una tupla
+cocina = ('Cuchara','cuchillo','tenedor')
+print(len(cocina))
+#Acceder a un elemento, para estp ulizamoscorchetes no parentesis
+print(cocina[0])
+#Mostrar de manera inversa
+print(cocina[-1])
+#Acceder a un rango
+print(cocina[0:2])
+#Ejemplo
+Verduras=('papa')#Una tupla necesita aunque sea de un elemento :la coma
+# de lo contrario solo sera un tipo str cadena
+
+#Recorremos los elementos de la tupla 
+for cocinar in cocina:
+    print(cocinar, end=' ') # Print esta usando \n para saltos de linear
+
+cocinaLista=list(cocina)
+cocinaLista[0]='Plato'
+cocina=tuple(cocinaLista)
+print('\n',cocina)
+
+#del cocina esto es para eliminar 
+#Tipo set
+planetas= {'Marte','Jupiter','Venus'}
+print(len(planetas))#Usamos la funcion len = length sigfica largo
+#Revisar si un elemento existe dentro de set
+print('Jupiter'in planetas)
+
+#Agregar un elemento
+planetas.add('Tierra') #add es una funcion
+print(planetas)
+#Eliminar elementos, puede arrojar un error si el elemento no existe
+planetas.remove('Jupiter')#Esta funcion ante un mal ingreso da error
+print(planetas)
+planetas.discard('tierra')#Esta funcion no nos presenta ningun tipo de error
+print(planetas)
+
+#Limpiar set
+planetas.clear()
+print(planetas)
+
+#Eliminar set o conjunto
+del planetas
+#print(planetas)# al eliminar nos muestra un error
+
+# 'Maradona':10 Un diccionario esta compuesto por dos elementos
+# Una llave y un valor
+#dict (key,value)
+diccionario={
+    'IDE':'Integrated Development Enviroment',
+    'POO':'Programacion orientada a Objetos',
+    'SABD':'Sistema de adminitracion de Base de Datos'
+}
+print(len(diccionario))
+print(diccionario)
+#Acceder a un diccionario con la llave (key)
+print(diccionario['IDE'])
+#Otra forma de recuperar un elemento
+print(diccionario.get('POO'))
+print(diccionario.get('SABD'))
+#Modificamos elementos
+diccionario['IDE']='Entorno de Desarrolo Integrado'
+print(diccionario)
+
+#Como recorrer los elementos
+for termino in diccionario: #Recorremos mostrando solo las llaves
+    print(termino)
+for termino , valor in diccionario.items():
+    print(termino,valor)
+
+#Otras maneras de accerder al diccionario
+for termino in diccionario.keys(): #Estamos usando una funcion
+    print(termino) #Muestra solo las llaves
+
+for valor in diccionario.values():
+    print(valor)
+
+#Comprobar la existencia de algun elemento
+print('IDE'in diccionario)#Devuelve un boleeano
+
+#Agregar un elemento
+diccionario['PK']='Primaty Key'
+print(diccionario)
+
+#Eliminar un elemento
+diccionario.pop('SABD')
+print(diccionario)
+
+#Vaciar un diccionario
+diccionario.clear()
+print(diccionario)
+
+#Eliminar diccionario
+del diccionario #El diccionario se borro 
+
+#Concatemanos listas
+lista1= [1,2,3,1]
+lista2= [4,5,6,1]
+lista3=lista1+lista2 #Concatenamos
+print(lista3)
+
+lista3.extend([7,8,9,1])#Funcion para agregar varios elmentos auna lista
+print(lista3)
+print(lista3.index(5)) #Funcion para ubicar en que indice esta el valor ingresado
+#print(lista.index(0))#esto daria un error por no ser el elemento parte de la lista 
+#Como saber cuantos valores repetidos hay dentro de una lista 
+print(lista3.count(1))
+
+#Para poner al reves una lista
+lista3.reverse()
+print(lista3)
+
+
+#Para que una lista se multiplique repitiendo sus elementos
+lista3=lista3 * 2
+print(lista3)
+
+#Metodos de ordenamiento,es una funcion
+lista3. sort()#Ordena los elementos en forma ascendente
+print(lista3)
+lista3.sort(reverse=True)#Orden descendentemente
+print(lista3)
+#Repaso de tuplas
+tupla=(4, 'Hola', 6.78, [1,2,78],4,'Hola')#Puede tener diferentes tipos de datos dentro
+print(tupla)
+print(4 in tupla)#
