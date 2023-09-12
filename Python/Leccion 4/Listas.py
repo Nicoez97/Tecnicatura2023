@@ -214,5 +214,22 @@ print(conjunto3)
 
 conjunto3 = conjunto1 - conjunto2 #Asigna el valor que esta en el conjunto 1 y no en el conjunto 2
 print(conjunto3)
+
 conjunto3= conjunto2 - conjunto1
 print(conjunto3)
+
+conjunto3= conjunto1 ^ conjunto2 #Elementos que no comparten o que son difetes entre ambos
+print(conjunto3)
+
+conjunto3= conjunto1 | conjunto2
+print(conjunto2.issubset(conjunto3)) # Aqui preguntamos si un conjunto es un subconjunto dentro de otro
+print(conjunto1.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+print(conjunto3.issuperset(conjunto1))# Preguntamos si los elementos del conjunto1 estan dentro del 3
+print(conjunto3.issuperset(conjunto2))# Si es verdadero quiere decir que el conjunto3 es un superconjunto
+print(conjunto2.issuperset(conjunto3))
+
+#Como saber si ambos conjuntos son dosconexos,esto es si no comparten elementos en comun
+print(conjunto1.isdisjoint(conjunto2))
