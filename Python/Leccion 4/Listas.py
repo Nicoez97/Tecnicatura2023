@@ -232,4 +232,20 @@ print(conjunto3.issuperset(conjunto2))# Si es verdadero quiere decir que el conj
 print(conjunto2.issuperset(conjunto3))
 
 #Como saber si ambos conjuntos son dosconexos,esto es si no comparten elementos en comun
-print(conjunto1.isdisjoint(conjunto2))
+print(conjunto1.isdisjoint(conjunto2)) # No hay cosas en comun
+
+#Con vertit un conjunto totalmente en inmutable
+conjunto1=frozenset #Esto hace que el conjunto sea totalmente inmutable
+#No se úede agregar, modificar ni eliminar elementos del conjunto 
+
+#Repaso Diccionarios
+diccionarioNuevo = {'Azul':'Blue','Rojo':'Red','Verde':'Green','Amarillo':'Yellow'}
+print(diccionarioNuevo)
+#Como eliminar
+del(diccionarioNuevo['Azul'])
+print(diccionarioNuevo)
+
+#Los diccionarios pueden almacenar diferente tipos de datos 
+diccionario2 ={'Ariel':{'Edad':40,'Altura':1.83},'Osvaldo':[45,1.85],'Natalia':[35,1.67]}
+print(diccionario2)
+
