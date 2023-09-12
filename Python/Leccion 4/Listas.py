@@ -188,4 +188,16 @@ print(lista3)
 #Repaso de tuplas
 tupla=(4, 'Hola', 6.78, [1,2,78],4,'Hola')#Puede tener diferentes tipos de datos dentro
 print(tupla)
-print(4 in tupla)#
+print(4 in tupla)#Accion booleana , su respuesta esde tipo boolean
+#Lo que podemos usar dentro de tuplas son: index, count, len
+#En tuplas se puede convertir de tupla a lista y de lista a tupla
+#Repaso de set o conjunto
+#para definir un conjunto
+conjunto= set()
+conjunto1= {'bye',}
+conjunto.add(7)
+conjunto.add('Hola')
+print(conjunto)
+conjunto1.add('hola')
+print(conjunto1)
+print(3 not in conjunto1)# Preguntamos si  el numero 3 No esta en el conjunto 1
