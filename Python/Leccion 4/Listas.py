@@ -264,5 +264,21 @@ for llave, valor  in seleccionArgentina.items():
     print(llave,valor)
 #Como tarea agregar por lo menos 4 jugadores mas al diccionario : seleccionArgentina
 print('Tenemos cargados en el diccionario la cantidad de jugadores: ',end=' ')
-print(len(seleccionArgentina))#
+print(len(seleccionArgentina))
+
+#Pilas usando listas
+pila=[1,2,3]
+
+#Agregar elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
+
+#Sacamos elementos desde el final
+elementoBorrado = pila.pop()#Quita el ultimo elemento y los guarda en la variable
+print(f'Sacamos el elemento {elementoBorrado}')
+print(f'La pila ahora quedo asi:{pila}')
+
+
+
 
