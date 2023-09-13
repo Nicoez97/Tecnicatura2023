@@ -310,6 +310,3 @@ print(f'Atendido el cliente: {seRetira}')
 print(cola)
 
 
-
-
-
