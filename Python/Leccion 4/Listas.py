@@ -279,6 +279,37 @@ elementoBorrado = pila.pop()#Quita el ultimo elemento y los guarda en la variabl
 print(f'Sacamos el elemento {elementoBorrado}')
 print(f'La pila ahora quedo asi:{pila}')
 
+#Colas con listas
+#Estructura de datos de tipo fifo(first input/firs ourput)
+cola=['Ariel','Osvaldo','Liliana','Pilar']
+
+#Agregamos elementos al final de la cola
+cola.append('Natalia')
+cola.append('Jose')
+print(cola)
+
+#Sacamos elementos de la cola 
+seRetira=cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira=cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira=cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira=cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira=cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+
 
 
 
