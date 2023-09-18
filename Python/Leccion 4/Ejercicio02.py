@@ -7,9 +7,9 @@ for i in lista:
     print(i, end= '-')
 valor=int(input('\nDigite un valor a multiplicar:'))
 #Multiplicamos todos los elementos de la lista 
-for indice, i in enumerate(lista):
-    lista[indice] *=valor
-
+for indice, i in enumerate(lista): #Funcion para modificar indices de la lista
+    lista[indice] *=valor# El iterador solo recorre los indices,En esta linea se multiplican
+    
 print(f'Lista final con los elementos multiplcados por {valor}')
 for i in lista:
     print(i, end= '-')
