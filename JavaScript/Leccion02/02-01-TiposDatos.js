@@ -23,7 +23,7 @@ console.log( objeto);
 
 //Tipo de dato booleano
 var bandera = true;
-console.log(bandera);
+console.log(typeof bandera);
 
 //Tipo de dato funcion
 function miFuncion(){}
@@ -32,4 +32,14 @@ console.log(typeof miFuncion);
 //Tipo de Dato synbol
 
 var simbolo= Symbol("Mi simbolo");
-console.log(typeof simbolo);
+console.log(simbolo);
+
+//Tipo de Dato clase
+class Persona{
+    constructor(nombre,apellido){
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+}
+
+console.log(typeof Persona);
