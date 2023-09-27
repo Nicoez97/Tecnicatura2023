@@ -10,3 +10,6 @@ juntos=nombre+78+17;
 console.log(juntos);
 juntos=78+17+nombre;
 console.log(juntos);
+
+nombre += apellido;//Tercera Concatenacion usando el operador simplificado
+console.log(nombre)
