@@ -27,4 +27,16 @@ while True:
         nombre=input("Cual es el nombre del contacto:")
         if nombre in agenda:
             del(agenda[nombre])
-        
+            print("Se a eliminado el contacto requerido")
+        else:
+            print("Este contacto no existe en la agenda")
+    elif opcion==3:
+        print("Agenda de contactos")
+        for clave,valor in agenda.items():
+            print(f"Nombre: {clave}, Teléfono: {valor}")
+    elif opcion==4:
+        print("Gracias por utilizar su agenda de contactos")
+        break
+    else:
+        print("Se equivoco de opcion de menú: ")
+    print()
