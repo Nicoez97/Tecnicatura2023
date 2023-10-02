@@ -13,7 +13,37 @@ def show (name, lastName):
 person=["Ariel","Betancud"]
 show (person[0],person[1])#Pasamos uno por uno los datos de la lista a la función
 show(*person) # Esto es lo mismo que lo anterior pero lo pasamos todo junto
-peron2=("Osvaldo","Giodanini")#desempaquetamos a traves de una tupla
+person2=("Osvaldo","Giodanini")#desempaquetamos a traves de una tupla
 show(*person2)
 person3={"lastName": "Lucero", "name": "Natalia"}
 show(**person3)
+
+numbers=[1,2,3,4,5]#Aun con el la lista vacia se va a ejecutar el else
+for n in numbers:
+    print(n)
+    if n==3:
+        break #Esta es la unico manera para que no se ejecute el else
+else:
+    print("Esto se termino")
+
+#List comprehension,lista de comprension
+names= ["Paolo","Rodrigo","Lupe","Pepe"]
+alongP=[p for p in names if p[0]=="P"]#Esto regresa una nueva lista
+print(alongP)
+
+bottleC=[{"name":"Quilmes","country":"Arg"},
+         {"name":"Corona","country":"Mx"},
+         {"name":"Stella Artois","country":"Belgium"},
+         ]
+
+Arg=[b for b in bottleC  if b ["country"]=="Arg"]
+print(Arg)
+print(bottleC)
+
+#Paso de Argumento(funciones)
+def mi_funcion2(name,lastName):
+    print("Saludos a todos los que ven a través del canal de YouTube")
+    print(f"Nombre:{name},Apellido:{lastName}")
+mi_funcion2("Joge","Lucero")
+mi_funcion2("Ariel","Betancud")
+mi_funcion2("Analia","Pedrosa")
