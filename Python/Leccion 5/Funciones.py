@@ -68,3 +68,5 @@ def listarNombres(*nombres):
         print(nombre)
 listarNombres("Lucas","Jose","Claudia","Rosa","Maria")
 listarNombres("Marcos","Daniel","Romina","Pepe","Marcela","Carlos")
+
+def listaTerminos(**kwargs)
