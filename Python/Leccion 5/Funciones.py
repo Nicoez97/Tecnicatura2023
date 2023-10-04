@@ -61,3 +61,10 @@ def sumar2(a=0,b=0):#Le damos un valor por default
 resultado=sumar2()
 print(f"Resultado de la suma{resultado}")
 print(f"Resultado de la suma:{sumar2(22,66)}")
+
+#Argumentos,variables en funciones
+def listarNombres(*nombres):
+    for nombre in nombres:
+        print(nombre)
+listarNombres("Lucas","Jose","Claudia","Rosa","Maria")
+listarNombres("Marcos","Daniel","Romina","Pepe","Marcela","Carlos")
