@@ -47,3 +47,11 @@ def mi_funcion2(name,lastName):
 mi_funcion2("Joge","Lucero")
 mi_funcion2("Ariel","Betancud")
 mi_funcion2("Analia","Pedrosa")
+
+#La palabra return en funciones
+#Creamos una funcion para sumar
+def sumar(a,b):
+    return a + b
+resultado=sumar(78,22)
+#print(f"El resultado de la suma es:{resultado}")
+print(f"El resultado de la sumna es:{sumar(55,45)}")
