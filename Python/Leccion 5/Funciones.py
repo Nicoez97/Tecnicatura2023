@@ -69,4 +69,9 @@ def listarNombres(*nombres):
 listarNombres("Lucas","Jose","Claudia","Rosa","Maria")
 listarNombres("Marcos","Daniel","Romina","Pepe","Marcela","Carlos")
 
-def listaTerminos(**kwargs)
+def listaTerminos(**terminos): #Lo mas utilizados es *kwargs para recibir los argumentos
+    for llave,valor in terminos.tems():#kwargs significa: key word argument
+        print(f"{llave}:{valor}")
+listaTerminos()#No recibe nada,nada se va mostrar
+listarTerminos(IDE_=_"Integrated Develoment enviroment",PK="Primaruy key")
+listarTerminos(10="Leonel Messi")
