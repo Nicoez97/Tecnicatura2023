@@ -69,9 +69,21 @@ def listarNombres(*nombres):
 listarNombres("Lucas","Jose","Claudia","Rosa","Maria")
 listarNombres("Marcos","Daniel","Romina","Pepe","Marcela","Carlos")
 
-def listaTerminos(**terminos): #Lo mas utilizados es *kwargs para recibir los argumentos
-    for llave,valor in terminos.tems():#kwargs significa: key word argument
+def listarTerminos(**terminos): #Lo mas utilizados es *kwargs para recibir los argumentos
+    for llave, valor in terminos.items():#kwargs significa: key word argument
         print(f"{llave}:{valor}")
-listaTerminos()#No recibe nada,nada se va mostrar
-listarTerminos(IDE_=_"Integrated Develoment enviroment",PK="Primaruy key")
-listarTerminos(10="Leonel Messi")
+
+listarTerminos()#No recibe nada,nada se va mostrar
+listarTerminos(IDE="Integrated Develoment enviroment",PK="Primaruy key")
+listarTerminos(Nombre="Leonel Messi")
+
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+nombres2=["Tito","Pedro","Carlos"]
+desplegarNombres(nombres2)
+desplegarNombres("Carla")
+#desplegarNombres(10)#No es un objeto iterable
+desplegarNombres((10,11))
+desplegarNombres((10,11))#La convertimos a una tupla,en un solo elemento no olvidar la coma 
+desplegarNombres([22,55])#La convertimos en una lista 
