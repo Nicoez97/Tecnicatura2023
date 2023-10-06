@@ -10,5 +10,16 @@ public class EjercicioWhile01 {
             conteo++;//Vamos aumentando en uno la variable
         
         }
+        
+        var contador = 0;
+        do{ 
+            System.out.println("contador ="+ contador);
+            contador++;
+        
+        }while(contador<=7);
+        
+        for(var contando=0 ;contando < 7;contando++ ){
+            System.out.println("contando = " + contando);
+        }
     }
 }
