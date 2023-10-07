@@ -34,10 +34,7 @@ public class EjercicioWhile01 {
             }
              System.out.println("contando = " + contando);
         }   
-          
- 
-         
-      
+        
     }
         
 }
