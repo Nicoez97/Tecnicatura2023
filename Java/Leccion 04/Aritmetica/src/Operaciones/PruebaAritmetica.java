@@ -5,6 +5,9 @@ package Operaciones;
   
 public class PruebaAritmetica {
     public static void main(String[] args) {
+        var a =10;//variables locales
+        int b =7;
+        miMetodo();//Llamos el metodos nuevo
         Aritmetica aritmetica1=new Aritmetica();
         aritmetica1.a= 3;
         aritmetica1.b=7;
@@ -23,5 +26,14 @@ public class PruebaAritmetica {
         System.out.println("aritmerica2 = " + aritmerica2.a);
         System.out.println("aritmerica2 = " + aritmerica2.b);
         
+    }
+    
+    public static void miMetodo(){
+        // a= 10;//una variable esta limitada 
+        System.out.println("Aqui hay otro metodo");
+    
+        
+        
+    
     }
 }
