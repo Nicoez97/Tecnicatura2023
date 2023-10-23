@@ -26,11 +26,11 @@ public class Aritmetica {
     
     public int sumarConRetorno(){
         //int resultado = a + b;
-        return this.a + this.b;
+        return a + b;
     }
-    public int sumarConArgumentos(int arg1,int arg2){
-        this.a=arg1;//El argumento a se agigna al atributo this.a
-        this.b=arg2;
+    public int sumarConArgumentos(int a,int b){
+        this.a=a;//El argumento a se agigna al atributo this.a
+        this.b=b;
         //return a + b;
         return this.sumarConRetorno();
     }
