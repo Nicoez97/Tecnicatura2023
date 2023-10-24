@@ -3,7 +3,7 @@ package Clases;
 
 public class Persona {
     //Atributos de la clase(Caracteristicas)
-    String nombre;
+    public String nombre;
     String apellido;
     
     //Métodos de la clase(Acciones)

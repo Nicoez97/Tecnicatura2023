@@ -1,4 +1,9 @@
-
+/*
+Proyecto caja:
+Ejercicio 1 :Crear un proyecto según las especificaciones
+mostradas a continuacion.
+La formula es:volumen=ancho*alto*profundidad
+*/
 package caja;//Package
 
 public class PruebaCaja {
