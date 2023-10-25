@@ -28,16 +28,25 @@ public class PruebaAritmetica {
         System.out.println("aritmerica2 = " + aritmerica2.b);
         //aritmetica1=null;nunca utilizar esto,no se debe hacer
         //System.gc();metodo para limpiar residuos,es pesado,no utilizar
-        
-        
+        Persona persona =new Persona("Ariel","Betancud");
+        System.out.println("persona = " + persona);
+        System.out.println("Peronsa nombre: "+persona.nombre);
+        System.out.println("Persona apellido: "+persona.apellido);
     }
-    
+    //modularidad creamos un nuevo método
     public static void miMetodo(){
         // a= 10;//una variable esta limitada 
         System.out.println("Aqui hay otro metodo");
+    }
     
-        
-        
+}
+
+class Persona{
+    String nombre;
+    String apellido;
     
+    Persona(String nombre,String apellido){
+        this.nombre=nombre;
+        this.apellido=apellido;
     }
 }
