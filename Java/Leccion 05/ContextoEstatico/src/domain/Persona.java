@@ -5,26 +5,26 @@ public class Persona {
 
     //Cargamos atributos
     private int idPersona;
-    private int contadorPersona;
+    private static int contadorPersona;
     private String nombre;
     
     //Constructor
     public Persona(String nombre){
         this.nombre=nombre;
         //Incrementar el contador por cada objeto nuevo
-        contadorPersona++;//No utilizar el operador this
+        Persona.contadorPersona++;//No utilizar el operador this
         //Vamos a asignar un nuevo valor a la variable idPersona
-        this.idPersona=contadorPersona;
+        this.idPersona=Persona.contadorPersona;
         
     }
     
-//     public static int getContadorPersona() {
-//        return contadorPersona;
-//    }
-//
-//    public static void setContadorPersona(int aContadorPersona) {
-//        contadorPersona = aContadorPersona;
-//    }
+     public static int getContadorPersona() {
+        return contadorPersona;
+    }
+
+    public static void setContadorPersona(int aContadorPersona) {
+        contadorPersona = aContadorPersona;
+    }
 
     public int getIdPersona() {
         return this.idPersona;
