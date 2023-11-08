@@ -50,6 +50,7 @@ public class Cliente extends Persona {
         sb.append(", ").append(super.toString());
         sb.append('}');
         return sb.toString();
+        
     }
     
 }
